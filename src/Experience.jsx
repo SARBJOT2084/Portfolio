@@ -9,6 +9,7 @@ import { SocialIcon } from "react-social-icons";
 import netflix from "./netflix.png";
 import bagsite from "./bagssite.com.png";
 import tindog from "./tindog.png";
+import { motion } from 'framer-motion';
 function Experience() {
 
     return (
@@ -19,7 +20,7 @@ function Experience() {
                 <div className="row">
                     <div className="col-lg-3 col-md-6 col-12 md:mt-20 sm:mb-20">
                         <div className="card border-0 bg-[#36454F] text-white rounded" >
-                            <div className="card-body bg-[#36454F] text-center">
+                            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, }} transition={{ duration: 1.12, }} className="card-body bg-[#36454F] text-center">
                                 <h5 className="text-center">PROJECT 1</h5>
                                 <h7>GadgetsCart.com</h7>
                                 <p>Electronics Ecommerce </p>
@@ -56,13 +57,13 @@ function Experience() {
                                 </div>
 
 
-                            </div>
+                            </motion.div>
 
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 col-12 md:mt-20 sm:mb-20">
                         <div className="card border-0 bg-[#36454F] text-white rounded" >
-                            <div className="card-body bg-[#36454F] text-center">
+                            <motion.div initial={{ opacity: 0, scale: 1 }} whileInView={{ opacity: 1, }} transition={{ duration: 1.4, }} className="card-body bg-[#36454F] text-center">
                                 <h5 className="text-center">PROJECT 2</h5>
                                 <h7>BagsSite.com</h7>
                                 <p>Bags Ecommerce </p>
@@ -99,13 +100,13 @@ function Experience() {
                                 </div>
 
 
-                            </div>
+                            </motion.div>
 
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 col-12 md:mt-20 sm:mb-20">
                         <div className="card border-0 bg-[#36454F] text-white rounded" >
-                            <div className="card-body bg-[#36454F] text-center">
+                            <motion.div initial={{ opacity: 0, scale: 1, borderRadius: "100", }} whileInView={{ opacity: 1, borderRadius: "" }} transition={{ duration: 1.6, }} className="card-body bg-[#36454F] text-center">
                                 <h5 className="text-center">PROJECT 3</h5>
                                 <h7>Netflix Clone</h7>
                                 <p>Streaming Website </p>
@@ -140,13 +141,13 @@ function Experience() {
                                 </div>
 
 
-                            </div>
+                            </motion.div>
 
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 col-12 md:mt-20 sm:mb-20">
                         <div className="card border-0 bg-[#36454F] text-white rounded" >
-                            <div className="card-body bg-[#36454F] text-center">
+                            <motion.div initial={{ opacity: 0, scale: 1 }} whileInView={{ opacity: 1, }} transition={{ duration: 1.8, }} className="card-body bg-[#36454F] text-center">
                                 <h5 className="text-center">PROJECT 4</h5>
                                 <h7>TinDog.com</h7>
                                 <p>Dating Site for Dogs. </p>
@@ -182,7 +183,7 @@ function Experience() {
                                 </div>
 
 
-                            </div>
+                            </motion.div>
 
                         </div>
                     </div>

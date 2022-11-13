@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import my_img_2 from "./my_img_2.jpg"
+import car from './my_img.jpeg';
 function About() {
     return (
         <motion.div
@@ -8,7 +9,7 @@ function About() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
             className="flex flex-col relative h-screen text-center md:text-left md:flex-row
-             max-w-7xl px-10 justify-evenly mx-auto items-center">
+             max-w-7xl px-10 justify-evenly mx-auto items-center md:align-center md:mt-40 sm:mt-40">
             <h3 className="absolute top-24 uppercase tracking-[20px] text-white text-2xl mb-30">
                 About
             </h3>
@@ -17,7 +18,7 @@ function About() {
                 transition={{ duration: 1.2, }}
                 whileInView={{ opacity: 1, x: 0 }}
 
-                src={my_img_2}
+                src={car}
                 className="-mb-20 mt-60 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]" />
 
             <div className="space-y-10 px-0 md:px-10 mt-20 text-white space-x-8">
@@ -28,8 +29,9 @@ function About() {
                     My name is Sarbjot Sharma.I am currently pursuing
                     BE of Computer Science from Chitkara University.
                     I ❤️ to solve real life problems using DSA and like to develop responsive websites using React ,Javascript,Bootstrap.
-                    I have a good hold on problem solving using DSA . I solved about 500+ coding problems on different coding platforms.
-                    I looking to out for more oppurtunties.
+                    I have a good hold on problem solving using DSA . I solved about 500+ coding problems on Leetcode,Codechef.
+                    I have keen interest in learning new skills and new technologies ans implementing them to make projects easier . 
+                    I looking to out for more opportunities. Languages I know are C++ , Java, Python ,HTML5 , CSS3, JS, Bootstrap5,ReactJS.
 
                 </p>
             </div>

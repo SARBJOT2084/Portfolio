@@ -1,7 +1,7 @@
 import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-
+import cv from './Resume.pdf';
 import { motion } from "framer-motion";
 function Navbar() {
     return (
@@ -35,6 +35,7 @@ function Navbar() {
                             Skills
                         </a>
                     </li>
+
                 </motion.ul>
             </div>
 
@@ -44,12 +45,10 @@ function Navbar() {
                 transition={{ duration: 1.5, }}
 
                 className="navbar-nav  pe-5 text-white tracking-widest right-5" >
-                <li className="nav-item me-3">
-                    <i className="fa-solid fa-magnifying-glass"></i>
+                <li className="nav-item me-1">
+                    <a href={cv} download><i className="text-white fa-solid fa-download"></i></a>
                 </li>
-                <li className="nav-item lg:block md:block sm:hidden">
-                    Search
-                </li>
+
             </motion.ul>
         </nav>
     )

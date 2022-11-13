@@ -18,13 +18,15 @@ import Skills from './Skills';
 import Education from './Education';
 // certifications
 import Certificate from './Certificate';
-
+// problem solving
+import Hobbies from './Hobbies';
 // contact
 import Contacts from './Contact.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
+    {/*Modal */}
+  
     <div className="bg-[rgb(36,36,36)]  h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Navbar />
 
@@ -50,14 +52,16 @@ root.render(
       {/*Education */}
       <section id="education">
         <Education />
+
       </section>
 
 
       {/*Certfications*/}
       <Certificate />
-
+      <h1 className="mb-40"></h1>
       {/*Contacts */}
-      <Contacts />
+      <section id="contact"> <Contacts /></section>
+
 
 
     </div>

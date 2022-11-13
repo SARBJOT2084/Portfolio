@@ -39,7 +39,7 @@ function Contact() {
 
                 </div>
                 <div className="col-lg-6 col-md-6 col-12">
-                    <form>
+                    <form action="mailto:sarbjot852@gmail.com" method="post" encType="text/plain">
                         <div className="d-flex mb-4">
                             <div className="w-50 text-center text-white uppercase tracking-[6px]">Name</div>
                             <div className="w-50 text-center text-white uppercase tracking-[6px]">Email</div>
@@ -58,7 +58,7 @@ function Contact() {
                             <textarea id="w3review" name="w3review" placeholder="I would like to connect with you!" className="bg-[#262626] mr-5  text-white border-2 border-white rounded w-100  text-[15px] placeholder:text-[15px]  placeholder:text-left ps-4 focus:border-blue-500" rows="5" ></textarea>
 
                         </div>
-                        <button className=' mt-8 bg-[#262626] mr-5  text-white border-2 border-white rounded w-100'>Send Message</button>
+                        <button type="submit" className=' mt-8 bg-[#262626] mr-8  text-white border-2 border-white rounded w-100 text-2xl'>Send Message</button>
                     </form><br></br><br></br>
                 </div>
 

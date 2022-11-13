@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 //
 //
 //https://static.collegedekho.com/media/img/institute/logo/Chitkara_College.png
+import ll from './ll.png';
 function Education() {
     return (
         <div className="row ms-4 me-4">
@@ -35,7 +36,7 @@ function Education() {
                     </div>
                 </div>
             </motion.div>
-
+            <br></br>
             <motion.div className="col-lg-4"
                 intial={{ opacity: 0, rotate: 300 }}
                 whileInView={{
@@ -43,7 +44,7 @@ function Education() {
                 }}
                 transition={{ duration: 1.3 }}>
                 <div className="d-flex">
-                    <i className="fa-solid fa-left-long text-white mt-14 text-3xl mr-8"></i>
+                    <i className="fa-solid fa-left-long text-white mt-14 text-3xl mr-8 lg:visible md:invisible sm:invisible  "></i>
                     <div className="card border-0 bg-[#264348] w-100">
                         <div className="card-body rounded border-0 bg-[#264348]">
                             <div className='d-flex text-white'>
@@ -72,14 +73,14 @@ function Education() {
                 transition={{ duration: 1.2 }}
             >
                 <div className="d-flex">
-                    <i className="fa-solid fa-left-long text-white mt-14 text-3xl mr-8"></i>
+                    <i className="fa-solid fa-left-long text-white mt-14 text-3xl mr-8 lg:visible md:invisible sm:invisible"></i>
                     <div className="card border-0 bg-[#264348] w-100">
-                        <div className="card-body rounded border-0 bg-[#264348]">
+                        <div className="card-body rounded border-0 bg-[#264348] ">
                             <div className='d-flex text-white'>
                                 <div>
-                                    <img className="h-20 w-20 mr-10" alt="not available" src="http://www.shemrockschool.com/images/lo10opd.png " /></div>
+                                    <img className="h-20 w-20 mr-10" alt="not available" src={ll} /></div>
                                 <div>
-                                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiU5ISKl-X6AhVTRmwGHc_7BrsQFnoECBYQAQ&url=https%3A%2F%2Fwww.shemrockschool.com%2Fbranch-mohali.html&usg=AOvVaw1ttYBrUBPX5LrrjvyzRnJN" className="text-white text-center text-decoration-none hover:underline">Shemrock School</a>
+                                    <a href="https://www.shemrockschool.com/images/lo10opd.png" className="text-white text-center text-decoration-none hover:underline">Shemrock School</a>
                                     <p className="text-center text-sm">Sector-69,SAS-Nagar,Mohali</p>
                                     <p className="text-center"> 2006-2018</p>
                                     <p className="text-center mb-0 mt-2">LKG-10th</p>
